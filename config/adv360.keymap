@@ -51,9 +51,9 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4        &kp N5  &tog 2                                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0        &kp MINUS
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4        &kp N5  &tog 1                                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0        &kp MINUS
 &kp TAB    &kp Q   &kp W   &kp E   &kp R         &kp T   &none                                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P         &kp EQUAL
-&kp ESC    &kp A   &kp S   &kp D   &kp F         &kp G   &mo 3     &kp LA(LC(LEFT_GUI))  &kp LEFT_GUI      &lt 2 PAGE_DOWN  &lt 1 PAGE_UP  &mo 3      &kp H   &kp J   &kp K      &kp L     &kp SEMI      &kp SQT
+&kp ESC    &kp A   &kp S   &kp D   &kp F         &kp G   &mo 3     &kp LA(LC(LEFT_GUI))  &kp LEFT_GUI      &lt 2 PAGE_DOWN  &lt 2 PAGE_UP  &mo 3      &kp H   &kp J   &kp K      &kp L     &kp SEMI      &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp V         &kp B                                   &mo 2             &mo 2                                      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH      &kp RSHFT
 &kp LCTRL  &none   &none   &none   &kp LEFT_ALT          &kp BSPC  &kp DEL               &kp LCTRL         &kp RIGHT_GUI    &kp ENTER      &kp SPACE          &mo 2   &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT
             >;
@@ -70,14 +70,14 @@
             >;
         };
 
-        fn {
+        fn-numberpad {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1     &kp F2      &kp F3       &kp F4                &kp F5                 &tog 2                                      &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &trans     &trans      &kp PIPE     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &kp F12
-&trans  &kp CARET  &kp DOLLAR  &kp PERCENT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans      &trans       &trans                &trans                                 &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans      &trans       &trans                                       &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&trans  &kp F1     &kp F2      &kp F3       &kp F4                &kp F5                 &none                                       &none   &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &kp F11
+&trans  &trans     &kp UNDER   &kp PIPE     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none                                       &none   &trans  &kp N7  &kp N8  &kp N9   &trans   &kp F12
+&trans  &kp LC(A)  &kp DOLLAR  &kp PERCENT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &trans  &trans      &trans  &trans  &none   &trans  &kp N4  &kp N5  &kp N6   &trans   &trans
+&trans  &trans     &trans      &trans       &trans                &trans                                 &trans      &trans                  &trans  &kp N1  &kp N2  &kp N3   &trans   &trans
+&trans  &trans     &trans      &trans       &trans                                       &trans  &trans  &trans      &trans  &trans  &kp N0          &trans  &kp N0  &kp DOT  &trans   &trans
             >;
         };
 
